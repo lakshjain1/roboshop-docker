@@ -1,0 +1,4 @@
+FROM nginx
+RUN rm -rvf /usr/share.nginx/html/index.html
+COPY rodoshop.conf /etc/nginx/default.d/rodoshop.conf
+ADD static /usr/share/nginx/html/
